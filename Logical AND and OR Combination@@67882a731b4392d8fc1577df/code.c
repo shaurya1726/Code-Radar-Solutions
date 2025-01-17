@@ -5,11 +5,11 @@ int main(){
     if(x>0&&y<0){
         printf("True");
     }
-    else if(x<0&&y>0){
-        printf("False");
+    else if(x,y==0){
+        printf("True");
     }
     else{
-        printf("True");
+        printf("False");
     }
     return 0;
 }
