@@ -6,13 +6,9 @@ int main(){
         if(x,y==0){
             printf("True");
         }
-        else{
-            printf("True");
-        }
     }
     else{
         printf("False");
     }
-    
     return 0;
 }
