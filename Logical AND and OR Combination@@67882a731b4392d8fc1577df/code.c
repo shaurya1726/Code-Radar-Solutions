@@ -9,9 +9,10 @@ int main(){
         else{
             printf("True");
         }
+    }
     else{
         printf("False");
     }
-    }
+    
     return 0;
 }
