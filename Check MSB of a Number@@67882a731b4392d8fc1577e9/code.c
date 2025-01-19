@@ -1,10 +1,8 @@
 #include<stdio.h>
-#include<limits.h>
 int main(){
     int x;
     scanf("%d",&x);
-    int result = x >> (sizeof(int) * CHAR_BIT - 1);
-    if(result == 1){
+    if(x<0){
         printf("Set");
     }
     else{
