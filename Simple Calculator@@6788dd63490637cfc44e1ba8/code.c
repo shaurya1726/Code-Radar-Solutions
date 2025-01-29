@@ -8,12 +8,15 @@ int main(){
         case '+':
         z = x+y;
         printf("%d",z);
+        break;
         case '-':
         z = x-y;
         printf("%d",z);
+        break;
         case '*':
         z=x*y;
         printf("%d",z);
+        break;
         case '/':
         if(y%2!=0){
             z=x/y;
@@ -22,6 +25,9 @@ int main(){
         else{
             printf("Error");
         }
+        break;
+        default:
+        printf("Error");
     }
     return 0;
 }
