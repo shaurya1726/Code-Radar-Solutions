@@ -2,7 +2,9 @@
 int main(){
     int x,y;
     scanf("%d %d",&x,&y);
-    if(x^y){
+    int sq_root;
+    sq_root = x ** 0.5;
+    if(sq_root==y){
         printf("Yes");
     }
     else{
