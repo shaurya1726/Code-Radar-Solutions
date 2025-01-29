@@ -2,10 +2,10 @@
 int main(){
     int x,y;
     scanf("%d %d",&x,&y);
-    if(y^x){
+    if(x^y==y){
         printf("Yes");
     }
-    else{
+    else if(x^y!=y){
         printf("No");
     }
     return 0;
