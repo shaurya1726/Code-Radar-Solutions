@@ -2,7 +2,7 @@
 int main(){
     int x,y,z;
     char operator;
-    scanf("%d %d",&x,&y,);
+    scanf("%d %d",&x,&y);
     scanf("%c",&operator);
     switch(operator) {
         case '+':
