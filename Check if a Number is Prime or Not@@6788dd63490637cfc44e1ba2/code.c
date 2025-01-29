@@ -2,18 +2,27 @@
 int main(){
     int x;
     scanf("%d",&x);
-    int isPrime;
-    for(int i=1;i*i<=x;i++){
-        if(x%i==0){
-            isPrime = 0;
-            break;
-        }
-    }
-    if(isPrime){
+    if(x%2==0){
         printf("Prime");
     }
-    else{
+    else if(x%3==0){
         printf("Not Prime");
+    }
+    else if(x%2==0 || x%3==0){
+        printf("Not Prime");
+    }
+    else{
+        if(x%5==0){
+            printf("Not Prime");
+        }
+        else{
+            if(x%7==0){
+                printf("Not Prime");
+            }
+            else{
+                printf("Prime");
+            }
+        }
     }
     return 0;
 }
