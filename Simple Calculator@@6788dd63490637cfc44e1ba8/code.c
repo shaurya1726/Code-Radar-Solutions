@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main(){
-    int x,y,z;
+    int x,y;
     char oper;
     scanf("%d %d",&x,&y);
     scanf("%c",&oper);
     switch(oper) {
-        case '+':
+        case 1:
         printf("%d",x+y);
         break;
-        case '-':
+        case 2:
         printf("%d",x-y);
         break;
-        case '*':
+        case 3:
         printf("%d",x*y);
         break;
-        case '/':
+        case 4:
         if(y%2!=0){
             printf("%d",x/y);
         }
