@@ -18,7 +18,7 @@ int main(){
         printf("%d",z);
         break;
         case '/':
-        if(y%2!=0){
+        if(y%2==0){
             z=x/y;
             printf("%d",z);
         }
