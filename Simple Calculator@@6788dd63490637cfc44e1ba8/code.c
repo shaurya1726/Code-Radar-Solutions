@@ -2,9 +2,8 @@
 int main(){
     int x,y;
     char oper;
-    if(scanf("%d%d%c",&x,&y,&oper) !=3);
-    printf("error");
-    return 1;
+    scanf("%d%d%c",&x,&y,&oper);
+    scanf("%*c");
     switch(oper) {
         case '+':
         printf("%d",x+y);
