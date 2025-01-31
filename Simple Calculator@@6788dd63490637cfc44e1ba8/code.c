@@ -22,6 +22,7 @@ int main(){
             z=x/y;
             printf("%d",z);
         }
+        break;
         else{
             printf("Error");
         }
