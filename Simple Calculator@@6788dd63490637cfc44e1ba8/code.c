@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main(){
     int x,y;
-    int oper;
+    char oper;
     scanf("%d %d",&x,&y);
-    scanf("%d",&oper);
+    scanf("%c",&oper);
     switch(oper) {
-        case 1:
+        case '+':
         printf("%d",x+y);
         break;
-        case 2:
+        case '-':
         printf("%d",x-y);
         break;
-        case 3:
+        case '*':
         printf("%d",x*y);
         break;
-        case 4:
-        if(y%2!=0){
+        case '/':
+        if(y%2==0){
             printf("%d",x/y);
         }
         else{
