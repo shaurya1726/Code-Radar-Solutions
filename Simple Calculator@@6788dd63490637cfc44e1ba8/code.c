@@ -3,7 +3,7 @@ int main(){
     int x,y;
     char oper;
     scanf("%d%d%c",&x,&y,&oper);
-    scanf("%*c");
+    scanf("%*c",&oper);
     switch(oper) {
         case '+':
         printf("%d",x+y);
@@ -15,7 +15,7 @@ int main(){
         printf("%d",x*y);
         break;
         case '/':
-            printf("%d",x/y);
+        printf("%d",x/y);
         break;
         default:
         printf("error");
