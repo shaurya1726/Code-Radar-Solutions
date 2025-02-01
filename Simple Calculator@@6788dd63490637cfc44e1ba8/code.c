@@ -1,23 +1,23 @@
 #include<stdio.h>
 int main(){
-    int x,y,z;
+    int x,y,r;
     char z;
     scanf("%d %d %c",&x,&y,&z);
     if(z=='+'){
-        z=x+y;
+        r=x+y;
         printf("%d",z);
     }
     else if(z=='-'){
-        z=x-y;
+        r=x-y;
         printf("%d",z);
     }
     else if(z=='*'){
-        z=x*y;
+        r=x*y;
         printf("%d",z);
     }
     else if(z=='/'){
         if(y!=0){
-        z=x/y;
+        r=x/y;
         printf("%d",z);
         }
         else {
