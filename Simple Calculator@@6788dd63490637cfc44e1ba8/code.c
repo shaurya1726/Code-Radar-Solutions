@@ -5,20 +5,20 @@ int main(){
     scanf("%d %d %c",&x,&y,&z);
     if(z=='+'){
         r=x+y;
-        printf("%d",z);
+        printf("%d",r);
     }
     else if(z=='-'){
         r=x-y;
-        printf("%d",z);
+        printf("%d",r);
     }
     else if(z=='*'){
         r=x*y;
-        printf("%d",z);
+        printf("%d",r);
     }
     else if(z=='/'){
         if(y!=0){
         r=x/y;
-        printf("%d",z);
+        printf("%d",r);
         }
         else {
             printf("error");
