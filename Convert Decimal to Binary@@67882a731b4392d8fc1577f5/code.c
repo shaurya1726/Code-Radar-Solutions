@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-void binary(int num){
-    if(num>1){
-        binary(num/2);
+void binary(int n){
+    if(n>1){
+        binary(n/2);
     }
-    printf("%d",num/2);
 }
 int main()  {
     int num;
@@ -13,8 +12,8 @@ int main()  {
         printf("0");
     }
     else{
-        binary(num);
+        printf("%d",binary(num));
     }
-    printf("\n");
+    printf("\n")
     return 0;
 }
