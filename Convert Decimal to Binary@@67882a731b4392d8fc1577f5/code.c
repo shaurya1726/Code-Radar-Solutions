@@ -14,6 +14,6 @@ int main()  {
     else{
         binary(num);
     }
-    printf("\n")
+    printf("\n");
     return 0;
 }
