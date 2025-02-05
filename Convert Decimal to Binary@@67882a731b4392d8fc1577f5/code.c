@@ -6,8 +6,7 @@ int main()  {
         binary += (decimal % 2)*base;
         decimal /= 2;
         base *= 10;
-        printf("%d",binary);
-        return 0;
     }
+    printf("%d",binary);
     return 0;
 }
