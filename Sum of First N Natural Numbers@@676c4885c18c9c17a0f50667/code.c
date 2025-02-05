@@ -10,8 +10,9 @@ int main(){
             n=n/10;
             sum=sum+ld;
         }
-        printf("%d",sum);
+        
 
     }
+    printf("%d",sum);
     return 0;
 }
