@@ -12,7 +12,7 @@ int main()  {
         printf("0");
     }
     else{
-        printf("%d",binary(num));
+        printf(binary(num));
     }
     printf("\n")
     return 0;
