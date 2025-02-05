@@ -10,4 +10,5 @@ int main()  {
         main(n/2);
     }
     printf("%d"n%2);
+    return 0;
 }
