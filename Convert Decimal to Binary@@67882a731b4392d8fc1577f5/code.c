@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main()  {
-    int n;
-    scanf("%d",&n);
-    if(n==0){
-        printf("0");
+    int deciaml,binary=0,base=1;
+    scanf("%d",&deciaml);
+    while(decimal>0){
+        binary += (decimal % 2)*base;
+        decial /= 2;
+        base *= 10;
+        printf("%d"binary);
+        return 0;
     }
-    return 0;
-    if(n>1){
-        main(n/2);
-    }
-    printf("%d"n%2);
     return 0;
 }
