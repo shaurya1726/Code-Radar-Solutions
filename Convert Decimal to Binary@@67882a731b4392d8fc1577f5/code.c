@@ -4,7 +4,7 @@ int main()  {
     scanf("%d",&deciaml);
     while(decimal>0){
         binary += (decimal % 2)*base;
-        decial /= 2;
+        decimal /= 2;
         base *= 10;
         printf("%d",binary);
         return 0;
