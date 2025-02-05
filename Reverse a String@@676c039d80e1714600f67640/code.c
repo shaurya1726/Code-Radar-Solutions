@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main() {
     char s1[100];
-    printf("%c",(::-1,s1));
+    s1=::-1;
+    printf("%c",(s1));
     return 0;
 }
