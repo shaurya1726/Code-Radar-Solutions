@@ -8,6 +8,6 @@ int main(){
     int num;
     scanf("%d",&num);
     int toggled = toggle(num,n);
-    printf("%d",&toggled);
+    printf("%d",toggled);
     return 0;
 }
