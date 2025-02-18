@@ -5,7 +5,7 @@ int main(){
     int sum = 0;
     for(int i=n;i<=n*10;i=i+n){
         sum = n + n;
-        printf("%d * %d = %d\n",n,i,sum);
+        printf("%d X %d = %d\n",n,i,sum);
     }
     return 0;
 }
