@@ -1,13 +1,9 @@
 #include<stdio.h>
 int main(){
-    int x,y;
-    scanf("%d %d",&x,&y);
-    int result = (y & 1) || (y | 1) || (y ^ 1);
-    if(y==0){
-        printf("%d",result);
-    }
-    else{
-        printf("0");
-    }
+    int num,n;
+    scanf("%d%d",&num,&n);
+    int Getnthbit = (num >> n)&1;
+    int bit = Getnthbit(num,n);
+    printf("%d",bit);
     return 0;
 }
