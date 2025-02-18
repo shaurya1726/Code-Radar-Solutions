@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main(){
-    int decimal,i;
+    int decimal,binary[32],i=0;
     scanf("%d",&decimal);
     if(decimal==0){
-        printf("0\n");
+        printf("0");
     }
-    for(int i=31;i>=0;i--){
-        if((decimal>>i)&1){
-            break;
-        }
+    while(decimal>0){
+        binary[i]=decimal%2;
+        decimal = decimal/2;
+        i++;
     }
-    for(;i>=0;i--){
-        printf("%d",(decimal>>i)&1);
+    for(int j=i-1;j>=0;j--){
+        printf("%d",binary[j]);
     }
     printf("\n");
     return 0;
