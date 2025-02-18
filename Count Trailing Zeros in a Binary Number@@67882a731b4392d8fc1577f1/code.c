@@ -4,7 +4,7 @@ int main(){
     scanf("%d",&num);
     while((num &(1<<31))!=0){
         count++;
-        num /= 10;
+        num <<= 1;
     }
     printf("%d",count);
     return 0;
