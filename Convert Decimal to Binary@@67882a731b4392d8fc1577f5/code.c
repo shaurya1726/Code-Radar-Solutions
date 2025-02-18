@@ -1,9 +1,16 @@
 #include<stdio.h>
 int main(){
-    int decimal;
+    int decimal,i;
     scanf("%d",&decimal);
-    printf("");
+    if(decimal==0){
+        printf("0\n");
+    }
     for(int i=31;i>=0;i--){
+        if((decimal>>i)&1){
+            break;
+        }
+    }
+    for(;i>=0;i--){
         printf("%d",(decimal>>i)&1);
     }
     printf("\n");
