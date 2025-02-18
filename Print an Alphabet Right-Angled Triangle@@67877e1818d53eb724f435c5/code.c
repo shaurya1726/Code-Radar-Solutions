@@ -2,9 +2,10 @@
 int main(){
     int n;
     scanf("%d",&n);
-    for(int i=65;i<=n;i++){
-        for(int j=65;j<=i;j++){
-            char ch = (char)j;
+    int d = 65;
+    for(int i=d;i<=n;i++){
+        for(int j=d;j<=i;j++){
+            char ch = (char)d;
             printf("%c ",ch);
         }
         printf("\n");
