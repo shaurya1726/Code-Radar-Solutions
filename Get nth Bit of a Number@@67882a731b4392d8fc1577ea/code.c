@@ -2,8 +2,7 @@
 int main(){
     int num,n;
     scanf("%d%d",&num,&n);
-    int Getnthbit = (num >> n) & 1;
-    int bit = Getnthbit(num,n);
+    int bit = (num >> n) &1;
     printf("%d",bit);
     return 0;
 }
