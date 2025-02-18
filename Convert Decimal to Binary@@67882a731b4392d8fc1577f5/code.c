@@ -2,6 +2,7 @@
 int main(){
     int decimal;
     scanf("%d",&decimal);
+    printf("");
     for(int i=31;i>=0;i--){
         printf("%d",(decimal>>i)&1);
     }
