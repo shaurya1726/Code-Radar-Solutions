@@ -10,7 +10,7 @@ int main(){
             break;
         }
     }
-    printf("%d",(decimal>>i)&1)
+    printf("%d",i);
     for(;i>=0;i--){
         printf("%d",(decimal>>i)&1);
     }
