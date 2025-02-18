@@ -2,11 +2,12 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int d = 65;
     for(int i=d;i<=n;i++){
-        for(int j=d;j<=i;j++){
+        int a = 1;
+        for(int j=1;j<=i;j++){
+            int d = a + 64;
             char ch = (char)d;
-            printf("%c ",ch);
+            printf("%c ",d);
         }
         printf("\n");
     }
