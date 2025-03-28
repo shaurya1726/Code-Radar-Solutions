@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main(){
     int n;
-    int z=1;
+    bool a=true;
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
         for(int j=0;j<=i;j++){
-            printf("%d ",z--);
+            printf("%d ",a);
+            a=!a;
         }
+        printf("\n")
     }
     return 0;
 }
