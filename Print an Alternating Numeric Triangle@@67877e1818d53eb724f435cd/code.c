@@ -2,9 +2,9 @@
 #include<stdbool.h>
 int main(){
     int n;
-    bool a=true;
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
+    bool a=true;
         for(int j=0;j<=i-1;j++){
             printf("%d ",a);
             a=!a;
