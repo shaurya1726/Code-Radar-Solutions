@@ -1,14 +1,12 @@
 #include<stdio.h>
 int main(){
-    int n,original,reversed=0,remainder;
+    int n;
     scanf("%d",&n);
-    original = n;
-    for(;n!=0;n/=10){
-        remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-    }
-    if (original = reversed){
-        printf("%d",original);
+    for(int i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
     }
     return 0;
 }
