@@ -1,5 +1,5 @@
 #include<stdio.h>
-int findFirstPeak(int arr[],n){
+int findFirstPeak(int arr[],int n){
     if(n==1){
         return arr[0];
     }
