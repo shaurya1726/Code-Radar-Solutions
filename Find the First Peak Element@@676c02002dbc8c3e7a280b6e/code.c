@@ -30,6 +30,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int peak = findFirstPeak(arr,n);
-    printf("%d",peak);
+    printf("%d\n",peak);
     return 0;
 }
