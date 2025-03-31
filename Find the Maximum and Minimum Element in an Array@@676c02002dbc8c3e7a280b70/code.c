@@ -20,6 +20,6 @@ int main(){
             max = arr[i];
         }
     }
-    printf("%d ",min,max);
+    printf("%d %d",min,max);
     return 0;
 }
