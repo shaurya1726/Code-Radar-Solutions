@@ -16,8 +16,13 @@ int main(){
         }
     }
     for(int i=0;i<n;i++){
-        printf("Sorted\n");
+        printf("%d ",arr[i]);
     }
+    int k;
+    if(k == arr[i]){
+        printf("Sorted");
+    }
+    else ("Not Sorted");
 
     return 0;
 }
