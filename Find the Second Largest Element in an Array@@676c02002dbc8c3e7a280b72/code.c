@@ -1,6 +1,7 @@
 #include<stdio.h>
 int secondLargest(int arr[],int n){
     if(n<2){
+        printf("%d",-1);
         return -1;
     }
     int first = arr[0],second = -1;
