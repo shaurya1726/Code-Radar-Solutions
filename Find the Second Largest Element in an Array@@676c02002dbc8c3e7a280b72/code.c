@@ -34,8 +34,5 @@ int main(){
     if(second != -1){
         printf("%d\n",second);
     }
-    else if(arr[0]=arr[1]){
-        printf("%d",-1);
-    }
     return 0;
 }
