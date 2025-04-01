@@ -12,13 +12,8 @@ int primeCount(int arr[],int n){
         if(isPrime(arr[i])){
             count++;
         }
-        if(i==2){
-            count++;
-        }
-        if(i==3){
-            count++;
-        }
     }
+    return count;
 }
 int main(){
     int n;
