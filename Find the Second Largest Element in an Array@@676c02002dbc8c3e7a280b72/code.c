@@ -18,7 +18,9 @@ int secondLargest(int arr[],int n){
             second = arr[i];
         }
     }
-    return (second == -1) ? -1 : second;
+    if(allsame){
+        return -1;
+    }
 }
 int main(){
     int n;
