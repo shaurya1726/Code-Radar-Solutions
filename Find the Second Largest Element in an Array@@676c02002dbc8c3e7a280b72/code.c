@@ -34,8 +34,5 @@ int main(){
     if(second != -1){
         printf("%d\n",second);
     }
-    else{
-        printf("%d",-1);
-    }
     return 0;
 }
