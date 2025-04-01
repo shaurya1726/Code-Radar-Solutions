@@ -4,11 +4,12 @@ int secondLargest(int arr[],int n){
         printf("%d",-1);
         return -1;
     }
-    if(arr[n]==arr[n]){
-        return -1;
-    }
     int first = arr[0],second = -1;
+    int allsame = 1;
     for(int i=1;i<n;i++){
+        if(arr[i]!=arr[0]){
+            allsame=0;
+        }
         if(arr[i]>first){
             second = first;
             first = arr[i];
@@ -17,7 +18,10 @@ int secondLargest(int arr[],int n){
             second = arr[i];
         }
     }
-    return second;
+    if(allsame){
+        return -1;
+    }
+    return (second == -1) ? -1 : second;
 }
 int main(){
     int n;
