@@ -5,7 +5,7 @@ int secondLargest(int arr[],int n){
     }
     int first = arr[0],second = -1;
     for(int i=1;i<n;i++){
-        if(arr[i]<first){
+        if(arr[i]>first){
             second = first;
             first = arr[i];
         }
