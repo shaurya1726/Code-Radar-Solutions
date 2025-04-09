@@ -18,6 +18,7 @@ int main(){
     }
     if(count>n/2){
         Major = arr[i];
+        break;
     }
     if(Major!=-1){
         printf("%d ",Major);
