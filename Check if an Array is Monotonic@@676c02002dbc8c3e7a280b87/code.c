@@ -16,7 +16,7 @@ int main(){
             Decreasing = 0;
         }
     }
-    if(Increasing=1||Decreasing==1){
+    if(Increasing||Decreasing){
         printf("YES");
     }
     else{
