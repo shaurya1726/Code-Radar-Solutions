@@ -17,6 +17,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    sort(arr,n);
     int maxLen=1;currLen=1;
     for(int i=1;i<n;i++){
         if(arr[i] == arr[i-1]+1){
