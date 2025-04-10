@@ -1,28 +1,4 @@
 #include<stdio.h>
-int secondLargest(int arr[],int n){
-    if(n<2){
-        printf("%d",-1);
-        return -1;
-    }
-    int first = arr[0],second = -1;
-    int allsame = 1;
-    for(int i=1;i<n;i++){
-        if(arr[i]!=arr[0]){
-            allsame=0;
-        }
-        if(arr[i]>first){
-            second = first;
-            first = arr[i];
-        }
-        else if(arr[i]>second && arr[i] != first){
-            second = arr[i];
-        }
-    }
-    if(allsame){
-        return -1;
-    }
-    return (second == -1) ? -1 : second;
-}
 int main(){
     int n;
     scanf("%d",&n);
@@ -30,9 +6,22 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int second = secondLargest(arr,n);
-    if(second != -1){
-        printf("%d\n",second);
+    int first = 0;
+    int second = 0;
+    for(int i=0;i<n;i++){
+        if(arr[i]>first){
+            second = first;
+            first = arr[i];
+        }
+        else  if(arr[i]>second && arr[i] != first){
+            second = arr[i];
+        }
+    }
+    if(second == 0){
+        printf("-1");
+    }
+    else{
+        printf("%d",second);
     }
     return 0;
 }
