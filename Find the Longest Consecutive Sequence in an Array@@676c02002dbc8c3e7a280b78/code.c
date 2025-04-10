@@ -27,8 +27,8 @@ int main(){
             currLen = 1;
         }
     }
-    if(currLen>maxLen){[
+    if(currLen>maxLen){
         maxLen = currLen;
-    ]}
+    }
     return 0;
 }
