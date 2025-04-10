@@ -11,13 +11,16 @@ int main(){
     int found = 0;
     for(int i=0;i<n;i++){
         if(arr[i]==target){
-            printf("%d",i);
             found = 1;
             break;
         }
+        if(found==1){
+        printf("%d",i);
     }
-    if(!found){
+    else{
         printf("-1");
     }
+    }
+    
     return 0;
 }
