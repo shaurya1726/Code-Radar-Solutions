@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include<string.h>
 int main() {
-    char s1[100];
-    scanf("%s",&s1);
-    s1rev(str);
-    printf("%s",s1);
+    char str[100];
+    scanf("%c",&str);
+    gets(str);
+    int len = strlen(str);
+    for(int i=len-1;i>=0;i--){
+        printf("%c",str[i]);
+    }
     return 0;
 }
