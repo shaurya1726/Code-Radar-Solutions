@@ -16,11 +16,10 @@ int main(){
         }
         if(found==1){
         printf("%d",i);
+        }
+        else{
+            printf("-1");
+        }
     }
-    else{
-        printf("-1");
-    }
-    }
-    
     return 0;
 }
