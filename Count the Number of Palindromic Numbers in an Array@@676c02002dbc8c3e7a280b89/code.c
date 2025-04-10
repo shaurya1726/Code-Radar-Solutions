@@ -16,9 +16,10 @@ int main(){
             reversed = reversed * 10 + digit;
             temp = temp / 10;
         }
-    }
-    if(num == reversed){
-        count++;
+    
+        if(num == reversed){
+            count++;
+        }
     }
     printf("%d",count);
     return 0;
