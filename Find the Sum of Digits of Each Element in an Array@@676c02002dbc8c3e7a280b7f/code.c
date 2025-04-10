@@ -9,10 +9,10 @@ int main(){
     for(int i=0;i<n;i++){
         int num = arr[i];
         int sum = 0;
-    }
-    while(num>0){
-        sum += num % 10;
-        num /= 10;
+        while(num>0){
+            sum += num % 10;
+            num /= 10;
+        }
     }
     printf("%d",sum);
     return 0;
