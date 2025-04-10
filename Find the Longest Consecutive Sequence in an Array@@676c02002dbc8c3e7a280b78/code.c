@@ -30,6 +30,6 @@ int main(){
         maxLen = currLen;
         }
     }
-    printf("%d",currLen);
+    printf("%d",maxLen);
     return 0;
 }
