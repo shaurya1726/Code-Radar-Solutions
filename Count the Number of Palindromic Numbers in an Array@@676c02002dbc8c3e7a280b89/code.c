@@ -6,15 +6,16 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int count = 0;
     for(int i=0;i<n;i++){
         int num = arr[i];
         int reversed = 0;
         int temp = num;
-    }
-    while(temp>0){
-        int digit = temp % 10;
-        reversed = reversed * 10 + digit;
-        temp = temp / 10;
+        while(temp>0){
+            int digit = temp % 10;
+            reversed = reversed * 10 + digit;
+            temp = temp / 10;
+        }
     }
     if(num == reversed){
         count++;
