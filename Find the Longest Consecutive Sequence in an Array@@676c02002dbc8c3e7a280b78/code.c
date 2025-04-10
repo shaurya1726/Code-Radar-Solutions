@@ -26,9 +26,10 @@ int main(){
         else if(arr[i]!=arr[i-1]){
             currLen = 1;
         }
-    }
-    if(currLen>maxLen){
+        if(currLen>maxLen){
         maxLen = currLen;
+        }
     }
+    printf("%d",currLen);
     return 0;
 }
