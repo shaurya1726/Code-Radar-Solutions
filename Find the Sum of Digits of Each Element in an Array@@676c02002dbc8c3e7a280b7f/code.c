@@ -13,8 +13,10 @@ int main(){
             sum = 0;
         }
         else{
+            while(num>0){
             sum += num % 10;
             num /= 10;
+            }
         }
         printf("%d ",sum);
     }
