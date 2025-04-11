@@ -14,6 +14,9 @@ int main(){
                 count++;
             }
         }
+        if(count==maxElem){
+            maxElem = 1;
+        }
         if(count>maxElem){
             maxElem = arr[i];
         }
