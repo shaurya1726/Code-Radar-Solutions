@@ -10,10 +10,7 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int product = arr[i] * arr[j];
-            if(max_Product==0){
-                printf("0");
-            }
-            if(product>max_Product && product>0){
+            if(product>max_Product){
             max_Product = product;
             }
         }
