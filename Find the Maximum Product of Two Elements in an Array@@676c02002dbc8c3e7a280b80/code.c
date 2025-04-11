@@ -13,7 +13,7 @@ int main(){
             if(product>max_Product && product>0){
             max_Product = product;
             }
-            else if(max_Product==0){
+            else if(product==0){
                 printf("0");
             }
         }
