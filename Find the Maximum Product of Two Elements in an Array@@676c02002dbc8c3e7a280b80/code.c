@@ -14,7 +14,7 @@ int main(){
             max_Product = product;
             }
             else if(max_Product==0){
-                printf("-1");
+                printf("0");
             }
         }
         
