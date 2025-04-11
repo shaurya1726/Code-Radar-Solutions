@@ -8,7 +8,7 @@ int main(){
     for(int i=n-2;i>=0;i--){
         int temp = arr[i];
         arr[i] = maxRight;
-        if(maxRight<temp){
+        if(temp.maxRight){
             maxRight = temp;
         }
     }
