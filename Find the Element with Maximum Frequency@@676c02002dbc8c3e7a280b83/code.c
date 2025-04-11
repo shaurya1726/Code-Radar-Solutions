@@ -14,7 +14,7 @@ int main(){
             if(arr[i]==arr[j]){
                 count++;
             }
-            if(maxElem!0 && count != maxElem){
+            if(maxElem!=0 && count != maxElem){
                 sameFreq = 0;
             }
         }
