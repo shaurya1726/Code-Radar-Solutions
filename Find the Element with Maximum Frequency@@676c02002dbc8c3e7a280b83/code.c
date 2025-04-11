@@ -7,20 +7,29 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int maxElem = 0;
+    int sameFreq = 1;
     for(int i=0;i<n;i++){
         int count =1;
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
-                count++;
+                count = 0;
             }
         }
         if(count==maxElem){
             maxElem = 0;
         }
+        if(maxElem != 0 && count != maxElem){
+            sameFreq = 0;
+        }
         if(count>maxElem){
             maxElem = arr[i];
         }
     }
-    printf("%d",maxElem);
+    if(sameFreq){
+        printf("1");
+    }
+    else{
+        printf("%d",maxElem);
+    }
     return 0;
 }
