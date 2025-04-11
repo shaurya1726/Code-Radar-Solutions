@@ -12,7 +12,7 @@ int main(){
         rSum[i] = rSum[i-1] + arr[i];
     }
     for(int i=0;i<n;i++){
-        printf("%d",rSum[i]);
+        printf("%d ",rSum[i]);
     }
     return 0;
 }
