@@ -18,7 +18,7 @@ int main(){
                 sameFreq = 0;
             }
         }
-        if(sameFreq==0){
+        if(sameFreq){
             printf("1");
         }
         if(count==maxElem){
